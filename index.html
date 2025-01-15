@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- UNICONS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+        <title>Lokesh's Personal Portfolio</title>
+    </head>
+    
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Lokesh Reddy Darukumalli</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio                                </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact                               </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- HOME -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BdW9I429cR%2ByZgXmjGs2b4A%3D%3D" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/mohan97295?s=11" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                            <a href="https://github.com/Mohanpavankumar" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" href="C:\Users\Rakesh Darukumalli\Documents\Personal-portfolio\packages\images\Profile.jpeg"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Lokesh</h1>
+                            <h3 class="home__subtitle">Full Stack Developer </h3>
+                            <p class="home__description">Acquiring knowledge in design and developing the websites.</p>
+                            <a href="#contact" class="button button--flex home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section> 
+
+            <!-- ABOUT -->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="packages/images/profile1.jpeg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            Dynamic and detail-oriented Full Stack Developer with a strong background in both frontend and
+                            backend technologies. Skilled in building responsive, user-friendly applications and proficient in
+                            various programming languages, frameworks, and libraries including HTML, CSS, JavaScript,
+                            Python, React, Node.js, and SQL etc. Experienced in developing, deploying, and maintaining
+                            applications from the ground up, ensuring functionality, performance, and scalability. 
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Years <br> Experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">certifications <br> Completed</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">companies<br>Worked</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="LokeshReddy_Resume.pdf" href=".\packages\Files\Lokesh.pdf" target="_blank" class="button button--flex">
+                                Download Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                         <!-- SKILL-1 -->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-analytics skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Programming</h1>
+                                   <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Python</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__python"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    <div>
+                        <!-- SKILLS 2 -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                               <i class="uil uil-brackets-curly skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Web Developer</h1>
+                                   <!-- <span class="skills__subtitle">More than 3 years</span> -->
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">CSS</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__css"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JavaScript</h3>
+                                       <span class="skills__number">50%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">WordPress</h3>
+                                       <span class="skills__number">60%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__wordpress"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React.Js</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__reactjs"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__nodejs"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express.js</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__expressjs"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mongodb"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mysql"></span>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- QUALIFICATION -->
+        <section class="qualification__section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#certifications">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Certifications
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#experience">
+                        <i class="uil uil-briefcase-alt experience__icon"></i>
+                        Experience
+                    </div>
+                </div>
+
+            <div class="qualification__sections">
+            <!-- QUALIFICATION CONTENT 1 -->
+            <div class="qualification__content qualification__active" data-content id="education">
+             <!-- QUALIFICATION 1 --> 
+             <div class="qualification__data">
+                 <div>
+                     <h3 class="qualification__title">Secondary School Certificate</h3>
+                     <span class="qualification__subtitle">Sri Vidyniketan High School, Singarayakonda</span>
+                     <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2016 - 2017
+                     </div>
+                 </div>
+
+                 <div>
+                     <span class="qualification__rounder"></span>
+                     <span class="qualification__line"></span>
+                 </div>
+             </div>
+             
+             <!-- QUALIFICATION 2 --> 
+             <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">Intermediate</h3>
+                    <span class="qualification__subtitle">Sri Chaitanya Junior College, Vijayawada</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2017 - 2019
+                    </div>
+                </div>
+            </div> 
+
+            <!-- QUALIFICATION 3 --> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Bachelor of Technology</h3>
+                    <span class="qualification__subtitle">Bapatla Engineering College, Bapatla</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2019 - 2023
+                    </div>
+                </div>
+
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div> 
+
+            <!-- QUALIFICATION 4 --> 
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                   <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                    <h3 class="qualification__title">Masters in Computer Science and Engineering</h3>
+                    <span class="qualification__subtitle">University of Southern Mississippi, Mississippi</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2024 - 2025
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- QUALIFICATION CONTENT 2 -->
+            <div class="qualification__content" data-content id="certifications">
+                <!-- QUALIFICATION 1 --> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">C for EveryOne: Programming Fundamentals</h3>
+                        <span class="qualification__subtitle">Coursera</span>
+                        <div class="qualification__calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           May30, 2021
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                
+                <!-- QUALIFICATION 2 --> 
+                <div class="qualification__data">
+                   <div></div>
+                   <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                   </div>
+                   <div>
+                    <h3 class="qualification__title">Python for DataScience</h3>
+                       <span class="qualification__subtitle">NPTEL, Swayam</span>
+                       <div class="qualification__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          August, 2021
+                       </div>
+                   </div>
+               </div> 
+   
+               <!-- QUALIFICATION 3 --> 
+               <div class="qualification__data">
+                   <div>
+                    <h3 class="qualification__title">Google Cybersecurity</h3>
+                    <span class="qualification__subtitle">Google, Coursera</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       July8, 2024
+                    </div>
+                   </div>
+                   <div>
+                       <span class="qualification__rounder"></span>
+                       <!-- <span class="qualification__line"></span> -->
+                   </div>
+               </div>    
+            </div>
+             
+
+            <!-- QUALIFICATION CONTENT 3 -->
+        <div class="qualification__content" data-content id="experience">
+            <!-- QUALIFICATION 1 --> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Business Development Executive</h3>
+                    <span class="qualification__subtitle">Avodha Edutech Pvt Ltd, Hyderabad(Remote)</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       Aug 2021 - Jul 2022 
+                    </div>
+                </div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div>
+            
+            <!-- QUALIFICATION 2 --> 
+            <div class="qualification__data">
+               <div></div>
+               <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+               </div>
+               <div>
+                <h3 class="qualification__title">Software Engineer</h3>
+                <span class="qualification__subtitle">Tourslog, USA (Remote)</span>
+                <div class="qualification__calendar">
+                   <i class="uil uil-calendar-alt"></i>
+                   Aug 2022 - Feb 2023
+                </div>
+               </div>
+           </div> 
+
+           <!-- QUALIFICATION 3 --> 
+           <div class="qualification__data">
+               <div>
+                   <h3 class="qualification__title">Teaching Assistant</h3>
+                   <span class="qualification__subtitle">University of Southern Mississippi, USA (On-site)</span>
+                   <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      Aug 2024 - Jan 2025
+                   </div>
+               </div>
+               <div>
+                   <span class="qualification__rounder"></span>
+                   <!-- <span class="qualification__line"></span> -->
+               </div>
+           </div> 
+        </div>
+               </div>
+            </div>
+        </section> 
+      
+        <!-- PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent works</span>
+
+            <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+        <!-- PORTFOLIO 1 -->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/landin.png" alt="" class="landin__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">
+                        College Technical Fest Organizer</h3>
+                    <p class="portfolio__description">This web application gives the complete information about the events, sponsors,guests, registration portal for students as participant, volunteer and coordinator. </p>
+                    <a href="https://github.com/Mohanpavankumar/SudokuValidator.git" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        
+        <!-- PORTFOLIO 2 -->
+        
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/ML.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">
+                    AI-Based Models for Image processing for Agriculture Monitoring</h3>
+                <p class="portfolio__description">A research study has been conducted for the detection of plant diseases based on a dataset containing 2,310 images with the help of machine learning and deep learning algorithms. </p>
+                <a href="https://github.com/Mohanpavankumar/HeartDiseasePrediction.git" class="button button--flex button--small portfolio__button">
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+            
+
+        <!-- PORTFOLIO 3 -->
+    
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/FaceRecog.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">
+                    Face Recognition Based Attendance System with UI Interface</h3>
+                <p class="portfolio__description">This system streamlines the attendance management process, improving efficiency and accuracy. In the professor's interface, educators are required to input essential details such as room number, course name, section, and upload a group image of the students.</p>
+                <a href="https://infantstravels.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO 4 -->
+
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/portfolio3.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">Quiz App</h3>
+                <p class="portfolio__description">QuizApp is a simple and interactive web-based quiz application built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/Mohanpavankumar/QuizApp/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO 5 -->
+
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/portfolio4.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">Mern Authentication System</h3>
+                <p class="portfolio__description">This project is a MERN stack application that provides user authentication features, including login, signup, and forgot password.</p>
+                <a href="https://github.com/Mohanpavankumar/Registration_Login_Website/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        
+        </div>
+
+        </section>
+
+        <!-- CONTACT ME -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Ping me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+1) 8169657570</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">mohanpavan501@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Kansas, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="mailto:mohanpavan501@gmail.com"  class="button button--flex">
+                            Send message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title" title = 'Mohana Pavan Kumar Vankayala'>Mohana Pavan Kumar Vankayala</h1>
+                    <span class="footer__subtitle">Full Stack Developer |<br> Frontend Developer | <br> Backend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/share/quhnhP1p6eahu4QU/?mibextid=LQQJ4d" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/__mohanpavan__?igsh=bGpndHViNWMxMTlq&utm_source=qr" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://x.com/mohan97295?s=11" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Mohan03. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+
+    <!-- SWIPER JS -->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./packages/js/main.js"></script>
+</body>
+
+</html>
