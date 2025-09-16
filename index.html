@@ -12,14 +12,14 @@
         
         <!-- CSS -->
         <link rel="stylesheet" href="./packages/css/styles.css">
-        <title>Lokesh's Personal Portfolio</title>
+        <title>Lokesh Reddy Darukumalli - AI/ML Engineer & Full-Stack Developer</title>
     </head>
     
     <body>
         <!-- HEADER -->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Lokesh Reddy Darukumalli</a>
+                <a href="#" class="nav__logo">Lokesh R. Darukumalli</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -29,13 +29,16 @@
                             <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                            <a href="#skills" class="nav__link"><i class="uil uil-brain nav__icon"></i>Skills</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio                                </a>
+                            <a href="#experience" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Experience</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact                               </a>
+                            <a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact</a>
                         </li>
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -57,14 +60,14 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/lokeshreddy-darukumalli-3a67b5234/" target="_blank" class="home__social-icon">
+                            <a href="https://www.linkedin.com/in/lokeshreddydarukumalli/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/loki_6_20?igsh=ODI3bXNpbzBmZDUw" target="_blank" class="home__social-icon">
-                                <i class="uil uil-instagram"></i>
                             </a>
                             <a href="https://github.com/DLOKESHREDDY" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="mailto:lokeshreddydarukumalli@gmail.com" class="home__social-icon">
+                                <i class="uil uil-envelope-alt"></i>
                             </a>
                         </div>
 
@@ -86,12 +89,20 @@
                             </svg>
                         </div>
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Lokesh</h1>
-                            <h3 class="home__subtitle">Full Stack Developer </h3>
-                            <p class="home__description">Acquiring knowledge in design and developing the websites.</p>
-                            <a href="#contact" class="button button--flex home__button">
-                                Contact Me<i class="uil uil-message button__icon"></i>
-                            </a>
+                            <h1 class="home__title">Lokesh Reddy Darukumalli</h1>
+                            <h3 class="home__subtitle">AI/ML Engineer & Full-Stack Developer</h3>
+                            <p class="home__description">A results-driven developer with over 4 years of experience delivering production-ready ML systems and end-to-end web applications using Python, PyTorch/TensorFlow, and React/Node.js. I specialize in designing and deploying scalable models, MLOps pipelines, and building cloud-native infrastructure on AWS, Azure, and GCP.</p>
+                            <div class="home__buttons">
+                                <a href="#portfolio" class="button button--flex home__button">
+                                    View My Projects<i class="uil uil-scenery button__icon"></i>
+                                </a>
+                                <a href="#contact" class="button button--flex button--white home__button">
+                                    Contact Me<i class="uil uil-message button__icon"></i>
+                                </a>
+                                <a download="LokeshReddy_Resume.pdf" href=".\packages\Files\LokeshReddy_Resume.pdf" target="_blank" class="button button--flex button--outline home__button">
+                                    Download Resume<i class="uil uil-download-alt button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -114,11 +125,10 @@
                     <img src="packages/images/profile1.jpeg" alt="" class="about__img">
                     <div class="about__data">
                         <p class="about__description">
-                            Over 4+ years of experience as a Full Stack Developer, specializing in scalable web applications, 
-microservices, and cloud-based architectures. Proficient in technologies such as React.js, Vue.js, 
-Node.js, and with a strong foundation in data structures, algorithms, and distributed 
-systems. Experienced in database management, cloud computing, and DevOps practices. 
-Passionate about building high-performance, efficient applications that drive real-world impact.
+                            I am a results-driven AI/ML Engineer & Full-Stack Developer with 4+ years of experience delivering production ML systems and end-to-end web applications using Python, PyTorch/TensorFlow, and React/Node.js. I am an expert at designing and deploying scalable models and MLOps pipelines (Docker, Kubernetes, MLflow, Airflow, GitHub Actions) and building cloud-native infrastructure on AWS/Azure/GCP (EC2, S3, Lambda, RDS, IAM, Cloud Run).
+                        </p>
+                        <p class="about__description">
+                            My notable work includes a drone-based plant disease detection system and multiple production websites like an Ecommerce platform, a Liquor Store site, TripAI, and TransferbotAI. I have a proven track record of translating business requirements into production ML solutions, improving model accuracy and inference latency, and delivering measurable product impact.
                         </p>
                         <div class="about__info">
                             <div>
@@ -126,12 +136,12 @@ Passionate about building high-performance, efficient applications that drive re
                                 <span class="about__info-name">Years <br> Experience</span>
                             </div>
                             <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">certifications <br> Completed</span>
+                                <span class="about__info-title">15+</span>
+                                <span class="about__info-name">Projects <br> Completed</span>
                             </div>
                             <div>
-                                <span class="about__info-title">03+</span>
-                                <span class="about__info-name">companies<br>Worked</span>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Companies<br>Worked</span>
                             </div>
                         </div>
 
@@ -146,36 +156,34 @@ Passionate about building high-performance, efficient applications that drive re
 
             <!-- SKILLS -->
             <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
+                <h2 class="section__title">Technical Skills</h2>
+                <span class="section__subtitle">My technical expertise</span>
 
                 <div class="skills__container container grid">
                     <div>
                          <!-- SKILL-1 -->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
-                                <i class="uil uil-analytics skills__icon"></i>
+                                <i class="uil uil-brain skills__icon"></i>
                                <div>
-                                   <h1 class="skills__title">Programming</h1>
-                                   <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                                   <h1 class="skills__title">AI/ML & Data Science</h1>
                                </div>
-
                                <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">C</h3>
-                                        <span class="skills__number">60%</span>
+                                        <h3 class="skills__name">TensorFlow/PyTorch</h3>
+                                        <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__c"></span>
+                                        <span class="skills__percentage skills__tensorflow"></span>
                                     </div>
                                 </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">Python</h3>
-                                       <span class="skills__number">70%</span>
+                                       <span class="skills__number">95%</span>
                                    </div>
                                    <div class="skills__bar">
                                        <span class="skills__percentage skills__python"></span>
@@ -183,11 +191,20 @@ Passionate about building high-performance, efficient applications that drive re
                                </div>
                                <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">30%</span>
+                                    <h3 class="skills__name">OpenCV/Computer Vision</h3>
+                                    <span class="skills__number">85%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
+                                    <span class="skills__percentage skills__opencv"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">OpenAI API/LangChain</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__openai"></span>
                                 </div>
                             </div>
                             </div>
@@ -199,62 +216,66 @@ Passionate about building high-performance, efficient applications that drive re
                             <div class="skills__header">
                                <i class="uil uil-brackets-curly skills__icon"></i>
                                <div>
-                                   <h1 class="skills__title">Web Developer</h1>
-                                   <!-- <span class="skills__subtitle">More than 3 years</span> -->
+                                   <h1 class="skills__title">Frontend Development</h1>
                                </div>
-
                                <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">70%</span>
+                                        <h3 class="skills__name">React.js</h3>
+                                        <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
+                                        <span class="skills__percentage skills__reactjs"></span>
                                     </div>
                                 </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
-                                       <h3 class="skills__name">CSS</h3>
-                                       <span class="skills__number">70%</span>
+                                       <h3 class="skills__name">Next.js</h3>
+                                       <span class="skills__number">85%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__css"></span>
+                                       <span class="skills__percentage skills__nextjs"></span>
                                    </div>
                                </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
-                                       <h3 class="skills__name">JavaScript</h3>
-                                       <span class="skills__number">50%</span>
+                                       <h3 class="skills__name">TypeScript</h3>
+                                       <span class="skills__number">85%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__js"></span>
+                                       <span class="skills__percentage skills__typescript"></span>
                                    </div>
                                </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
-                                       <h3 class="skills__name">WordPress</h3>
-                                       <span class="skills__number">60%</span>
+                                       <h3 class="skills__name">Vue.js</h3>
+                                       <span class="skills__number">75%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__wordpress"></span>
+                                       <span class="skills__percentage skills__vuejs"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React.Js</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__reactjs"></span>
-                                </div>
                             </div>
-                            <div class="skills__data">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <!-- SKILLS 3 -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                               <i class="uil uil-server-network skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Backend & Cloud</h1>
+                               </div>
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Node.js</h3>
-                                    <span class="skills__number">30%</span>
+                                    <h3 class="skills__name">Node.js/Express</h3>
+                                    <span class="skills__number">90%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__nodejs"></span>
@@ -262,17 +283,59 @@ Passionate about building high-performance, efficient applications that drive re
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Express.js</h3>
-                                    <span class="skills__number">30%</span>
+                                    <h3 class="skills__name">FastAPI/Flask</h3>
+                                    <span class="skills__number">85%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__expressjs"></span>
+                                    <span class="skills__percentage skills__fastapi"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">AWS/Azure/GCP</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__aws"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Docker/Kubernetes</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__docker"></span>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    <div>
+                        <!-- SKILLS 4 -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                               <i class="uil uil-database skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Databases & DevOps</h1>
+                               </div>
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PostgreSQL</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__postgresql"></span>
                                 </div>
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">MongoDB</h3>
-                                    <span class="skills__number">40%</span>
+                                    <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__mongodb"></span>
@@ -280,11 +343,20 @@ Passionate about building high-performance, efficient applications that drive re
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">60%</span>
+                                    <h3 class="skills__name">GitHub Actions</h3>
+                                    <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__mysql"></span>
+                                    <span class="skills__percentage skills__github"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Redis</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__redis"></span>
                                 </div>
                             </div>
                            </div>
@@ -293,112 +365,126 @@ Passionate about building high-performance, efficient applications that drive re
                 </div>
             </section>
 
-        <!-- QUALIFICATION -->
-        <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <!-- EXPERIENCE -->
+        <section class="qualification__section" id="experience">
+            <h2 class="section__title">Professional Experience</h2>
+            <span class="section__subtitle">My career journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                    <div class="qualification__button button--flex qualification__active" data-target='#experience-content'>
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Experience
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#certifications">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Certifications
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#experience">
-                        <i class="uil uil-briefcase-alt experience__icon"></i>
-                        Experience
                     </div>
                 </div>
 
             <div class="qualification__sections">
-            <!-- QUALIFICATION CONTENT 1 -->
-            <div class="qualification__content qualification__active" data-content id="education">
-             <!-- QUALIFICATION 1 --> 
+            <!-- EXPERIENCE CONTENT -->
+            <div class="qualification__content qualification__active" data-content id="experience-content">
+             <!-- EXPERIENCE 1 --> 
              <div class="qualification__data">
                  <div>
-                     <h3 class="qualification__title">Secondary School Certificate</h3>
-                     <span class="qualification__subtitle">Sri Vidyniketan High School, Singarayakonda</span>
+                     <h3 class="qualification__title">AI Engineer</h3>
+                     <span class="qualification__subtitle">Xnode Inc, West Port, CT</span>
                      <div class="qualification__calendar">
                         <i class="uil uil-calendar-alt"></i>
-                        2016 - 2017
+                        Jan 2025 – Present
                      </div>
+                     <ul class="qualification__details">
+                         <li>Integrated backend communication between AI agents and services like email and Microsoft Teams using Python APIs</li>
+                         <li>Rebuilt the agent interaction interface by enabling draggable AI agent emojis across the UI</li>
+                         <li>Implemented inline AI response editing using Kindoreact Editor, allowing rich text formatting</li>
+                         <li>Enhanced UX for AI-generated content by developing editable markdown-compatible components</li>
+                     </ul>
                  </div>
-
                  <div>
                      <span class="qualification__rounder"></span>
                      <span class="qualification__line"></span>
                  </div>
              </div>
              
-             <!-- QUALIFICATION 2 --> 
+             <!-- EXPERIENCE 2 --> 
              <div class="qualification__data">
                 <div></div>
                 <div>
                    <span class="qualification__rounder"></span>
                    <span class="qualification__line"></span>
                 </div>
-
                 <div>
-                    <h3 class="qualification__title">Intermediate</h3>
-                    <span class="qualification__subtitle">Sri Chaitanya Junior College, Vijayawada</span>
+                    <h3 class="qualification__title">Graduate Research Assistant</h3>
+                    <span class="qualification__subtitle">University of Southern Mississippi, MS</span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2017 - 2019
+                       Aug 2023 – Jan 2025
                     </div>
+                    <ul class="qualification__details">
+                        <li>Developed a web-based visualization portal using React.js and Flask to transform static content into interactive simulations</li>
+                        <li>Improved client-side routing efficiency and reduced page load times by over 40% by modularizing UI components</li>
+                        <li>Built scalable, secured RESTful APIs with FastAPI to support real-time academic collaboration for over 90 students</li>
+                        <li>Created end-to-end CI/CD pipelines using GitHub Actions and Docker to automate deployment and testing</li>
+                    </ul>
                 </div>
             </div> 
 
-            <!-- QUALIFICATION 3 --> 
+            <!-- EXPERIENCE 3 --> 
             <div class="qualification__data">
                 <div>
-                    <h3 class="qualification__title">Bachelor of Technology</h3>
-                    <span class="qualification__subtitle">Bapatla Engineering College, Bapatla</span>
+                    <h3 class="qualification__title">Software Engineer</h3>
+                    <span class="qualification__subtitle">Tourslog, Hyderabad, India</span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2019 - 2023
+                       Jul 2022 - Jul 2023
                     </div>
+                    <ul class="qualification__details">
+                        <li>Revamped a monolithic backend by implementing Spring Boot microservices, reducing API response time by 30%</li>
+                        <li>Integrated AWS Cognito for token-based, multi-role authentication to solve session hijacking issues</li>
+                        <li>Containerized services with Docker and automated infrastructure scaling on AWS EC2, improving availability for 5,000+ peak concurrent users</li>
+                        <li>Reduced backend read latency by 20% by caching frequent queries with Redis</li>
+                    </ul>
                 </div>
-
                 <div>
                     <span class="qualification__rounder"></span>
                     <span class="qualification__line"></span>
                 </div>
             </div> 
 
-            <!-- QUALIFICATION 4 --> 
+            <!-- EXPERIENCE 4 --> 
             <div class="qualification__data">
                 <div></div>
                 <div>
                     <span class="qualification__rounder"></span>
-                   <!-- <span class="qualification__line"></span> -->
                 </div>
                 <div>
-                    <h3 class="qualification__title">Masters in Computer Science and Engineering</h3>
-                    <span class="qualification__subtitle">University of Southern Mississippi, Mississippi</span>
+                    <h3 class="qualification__title">Web Developer</h3>
+                    <span class="qualification__subtitle">Avodha Edutech Pvt Ltd, Bangalore, India</span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2024 - 2025
+                       Aug 2021 – Jul 2022
                     </div>
+                    <ul class="qualification__details">
+                        <li>Built mobile-responsive learning interfaces using Vue.js and React.js to ensure consistent performance across all devices</li>
+                        <li>Implemented JWT-based authentication in an Express.js backend for secure access to course content</li>
+                        <li>Configured GitHub Actions for CI/CD pipelines and implemented Jest test automation, reducing deployment time</li>
+                        <li>Enabled real-time virtual learning by embedding the Zoom SDK and integrating session scheduling APIs</li>
+                    </ul>
                 </div>
             </div>
             </div>
             
-            <!-- QUALIFICATION CONTENT 2 -->
-            <div class="qualification__content" data-content id="certifications">
-                <!-- QUALIFICATION 1 --> 
+            <!-- EDUCATION CONTENT -->
+            <div class="qualification__content" data-content id="education">
+                <!-- EDUCATION 1 --> 
                 <div class="qualification__data">
                     <div>
-                        <h3 class="qualification__title">C for EveryOne: Programming Fundamentals</h3>
-                        <span class="qualification__subtitle">Coursera</span>
+                        <h3 class="qualification__title">Master of Science in Computer Science</h3>
+                        <span class="qualification__subtitle">University of Southern Mississippi, Hattiesburg, MS</span>
                         <div class="qualification__calendar">
                            <i class="uil uil-calendar-alt"></i>
-                           May30, 2021
+                           2023 - 2025
                         </div>
                     </div>
                     <div>
@@ -407,250 +493,165 @@ Passionate about building high-performance, efficient applications that drive re
                     </div>
                 </div>
                 
-                <!-- QUALIFICATION 2 --> 
+                <!-- EDUCATION 2 --> 
                 <div class="qualification__data">
                    <div></div>
                    <div>
                       <span class="qualification__rounder"></span>
-                      <span class="qualification__line"></span>
                    </div>
                    <div>
-                    <h3 class="qualification__title">Python for DataScience</h3>
-                       <span class="qualification__subtitle">NPTEL, Swayam</span>
+                    <h3 class="qualification__title">Bachelor of Technology in Information Technology</h3>
+                       <span class="qualification__subtitle">Bapatla Engineering College, Bapatla, India</span>
                        <div class="qualification__calendar">
                           <i class="uil uil-calendar-alt"></i>
-                          August, 2021
+                          2019 - 2023
                        </div>
                    </div>
-               </div> 
-   
-               <!-- QUALIFICATION 3 --> 
-               <div class="qualification__data">
-                   <div>
-                    <h3 class="qualification__title">Google Cybersecurity</h3>
-                    <span class="qualification__subtitle">Google, Coursera</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       July8, 2024
-                    </div>
-                   </div>
-                   <div>
-                       <span class="qualification__rounder"></span>
-                       <span class="qualification__line"></span>
-                   </div>
-               </div>
-
-               <!-- QUALIFICATION 4 --> 
-               <div class="qualification__data">
-                <div></div>
-                <div>
-                   <span class="qualification__rounder"></span>
-                   <span class="qualification__line"></span>
-                </div>
-                <div>
-                 <h3 class="qualification__title">JavaScript Algorithms and Data Structures (Beta)</h3>
-                    <span class="qualification__subtitle">freeCodeCamp</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                      July 18, 2024
-                    </div>
-                </div>
-            </div>
-            <!-- QUALIFICATION 5 --> 
-            <div class="qualification__data">
-                <div>
-                    <h3 class="qualification__title">Responsive Web Design </h3>
-                    <span class="qualification__subtitle">freeCodeCamp</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                        July 17, 2024
-                    </div>
-                </div>
-                <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                </div>
-            </div>
-            
-            <!-- QUALIFICATION 6 --> 
-            <div class="qualification__data">
-               <div></div>
-               <div>
-                  <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
-               </div>
-               <div>
-                <h3 class="qualification__title">Problem Solving(Advanced) Certification</h3>
-                   <span class="qualification__subtitle">HackerRank</span>
-                   <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                     Sep 23, 2023
-                   </div>
-               </div>
-           </div>
-                   
-            </div>
-             
-
-            <!-- QUALIFICATION CONTENT 3 -->
-        <div class="qualification__content" data-content id="experience">
-            <!-- QUALIFICATION 1 --> 
-            <div class="qualification__data">
-                <div>
-                    <h3 class="qualification__title">Web Developer</h3>
-                    <span class="qualification__subtitle">Avodha Edutech Pvt Ltd, Hyderabad(Remote)</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       Aug 2021 - Jul 2022 
-                    </div>
-                </div>
-                <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                </div>
-            </div>
-            
-            <!-- QUALIFICATION 2 --> 
-            <div class="qualification__data">
-               <div></div>
-               <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-               </div>
-               <div>
-                <h3 class="qualification__title">Software Engineer</h3>
-                <span class="qualification__subtitle">Tourslog, USA (Remote)</span>
-                <div class="qualification__calendar">
-                   <i class="uil uil-calendar-alt"></i>
-                   Aug 2022 - Feb 2023
-                </div>
-               </div>
-           </div> 
-
-           <!-- QUALIFICATION 3 --> 
-           <div class="qualification__data">
-               <div>
-                   <h3 class="qualification__title">Teaching Assistant</h3>
-                   <span class="qualification__subtitle">University of Southern Mississippi, USA (On-site)</span>
-                   <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                      Aug 2024 - Jan 2025
-                   </div>
-               </div>
-               <div>
-                   <span class="qualification__rounder"></span>
-                   <!-- <span class="qualification__line"></span> -->
-               </div>
-           </div> 
-        </div>
                </div>
             </div>
-        </section> 
+               </div>
+            </div>
+        </section>
       
         <!-- PORTFOLIO -->
         <section class="portfolio section" id="portfolio">
 
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent works</span>
+            <h2 class="section__title">Featured Projects</h2>
+            <span class="section__subtitle">My recent work & achievements</span>
 
             <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
         <!-- PORTFOLIO 1 -->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/landin.png" alt="" class="landin__img">
+                <img src="./packages/images/ML.png" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">
-                        College Technical Fest Organizer</h3>
-                    <p class="portfolio__description">This web application gives the complete information about the events, sponsors,guests, registration portal for students as participant, volunteer and coordinator. </p>
-                    <a href="https://github.com/DLOKESHREDDY/BectagonEventSite" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
+                        Ramie Crop Disease Monitoring System</h3>
+                    <p class="portfolio__description">Built an intelligent crop diagnosis platform using TensorFlow with VGG16 and ResNet50, trained on over 2,300 agricultural images. Developed an interactive portal using React.js for image uploads and real-time prediction display via an AWS Lambda backend.</p>
+                    <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                        <a href="https://www.kaggle.com/code/dlokeshreddy777/csc-697-699-2024-25" target="_blank" class="button button--flex button--small portfolio__button">
+                            View on Kaggle
+                            <i class="uil uil-external-link-alt button__icon"></i>
+                        </a>
+                    </div>
+                    <div class="portfolio__tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
                 </div>
             </div>
         
         <!-- PORTFOLIO 2 -->
         
         <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/ML.png" alt="" class="portfolio__img">
-
-            <div class="portfolio_">
-                <h3 class="portfolio__title">
-                    AI-Based Models for Image processing for Agriculture Monitoring</h3>
-                <p class="portfolio__description">A research study has been conducted for the detection of plant diseases based on a dataset containing 2,310 images with the help of machine learning and deep learning algorithms. </p>
-                <!-- <a href="https://github.com/DLOKESHREDDY/AI-Based-Models-for-Image-processing-for-Agriculture-Monitoring" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                    <br>
-                    <a download="FinalPaper_AgricultureMonitoring.pdf" href=".\packages\Files\ML_Project.pdf" target="_blank" class="button button--flex button--small portfolio__button>
-                        Download Paper<i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </a> -->
-                <div style="display: flex; gap: 10px;">
-                    <a href="https://github.com/DLOKESHREDDY/AI-Based-Models-for-Image-processing-for-Agriculture-Monitoring" 
-                       class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                
-                    <a download="FinalPaper_AgricultureMonitoring.pdf" 
-                       href="./packages/Files/ML_Project.pdf" 
-                       target="_blank" 
-                       class="button button--flex button--small portfolio__button">
-                        Download Paper
-                        <i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-            
-
-        <!-- PORTFOLIO 3 -->
-    
-        <div class="portfolio__content grid swiper-slide">
             <img src="./packages/images/FaceRecog.png" alt="" class="portfolio__img">
 
             <div class="portfolio_">
                 <h3 class="portfolio__title">
-                    Face Recognition Based Attendance System with UI Interface</h3>
-                <p class="portfolio__description">This system streamlines the attendance management process, improving efficiency and accuracy. In the professor's interface, educators are required to input essential details such as room number, course name, section, and upload a group image of the students.</p>
-                <a href="" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
+                    Real-Time Face Recognition Attendance System</h3>
+                <p class="portfolio__description">Deployed a biometric system using MTCNN and FaceNet to identify faces from live video with 90% accuracy and sub-second latency. Implemented a serverless backend with API Gateway, AWS Lambda, and DynamoDB to securely store attendance records.</p>
+                <a href="https://github.com/DLOKESHREDDY" target="_blank" class="button button--flex button--small portfolio__button">
+                    View Code
                     <i class="uil uil-arrow-right button__icon"></i>
                 </a>
+                <div class="portfolio__tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">AWS Lambda</span>
+                    <span class="tech-tag">MTCNN</span>
+                    <span class="tech-tag">DynamoDB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO 3 -->
+        
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/landin.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">
+                    Mangoes from Ulavapadu E-Commerce</h3>
+                <p class="portfolio__description">Developed a full-featured, mobile-first online store with real-time inventory logic. Integrated secure checkout using Razorpay APIs and Delhivery for live shipment tracking. Deployed with Netlify and optimized global performance using AWS CloudFront.</p>
+                <a href="https://mangoesfromulavapadu.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Live Demo
+                    <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <div class="portfolio__tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Razorpay</span>
+                    <span class="tech-tag">AWS CloudFront</span>
+                </div>
             </div>
         </div>
 
         <!-- PORTFOLIO 4 -->
-<!-- 
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/portfolio3.png" alt="" class="portfolio__img">
-
-            <div class="portfolio_">
-                <h3 class="portfolio__title">Quiz App</h3>
-                <p class="portfolio__description">QuizApp is a simple and interactive web-based quiz application built with HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/Mohanpavankumar/QuizApp/" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-            </div>
-        </div> -->
-
-        <!-- PORTFOLIO 5 -->
-
+        
         <div class="portfolio__content grid swiper-slide">
             <img src="./packages/images/quiz_1.png" alt="" class="portfolio__img">
 
             <div class="portfolio_">
-                <h3 class="portfolio__title">BEC Online Quiz Portal</h3>
-                <p class="portfolio__description">BEC Online Quiz Portal is a web-based platform designed to facilitate seamless quiz creation, management, and evaluation for students and faculty at Bapatla Engineering College. It offers an intuitive interface for conducting timed quizzes, automatic grading, and performance tracking.</p>
-                <a href="https://github.com/DLOKESHREDDY/Studentsportal" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
+                <h3 class="portfolio__title">
+                    Rise Spirits Wine - E-Commerce</h3>
+                <p class="portfolio__description">Designed a complete e-commerce platform with responsive product grids, dynamic cart management, and optimized checkout flows. Used Firebase for secure authentication and real-time inventory management. Received $2000 in funding support for delivering a production-ready solution.</p>
+                <a href="https://risespiritswine.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Live Site
+                    <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
+                <div class="portfolio__tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO 5 -->
+        
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/ML.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">
+                    TripwithAI - AI Travel Assistant</h3>
+                <p class="portfolio__description">Developed a hybrid SSG/SSR front end with Next.js featuring responsive itinerary dashboards. Integrated the OpenAI GPT-4 API via a Flask-based backend on Netlify Functions for real-time itinerary generation and conversational chat. Achieved sub-200 ms API responses.</p>
+                <a href="https://tripwithai.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                        Live Demo
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                <div class="portfolio__tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PORTFOLIO 6 -->
+        
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/landin.png" alt="" class="portfolio__img">
+
+            <div class="portfolio_">
+                <h3 class="portfolio__title">
+                    TransferbotAI - Startup Product</h3>
+                <p class="portfolio__description">Built the entire product from ground up to production for a startup. A comprehensive AI-powered platform featuring advanced automation capabilities, real-time data processing, and scalable architecture designed to handle enterprise-level workloads.</p>
+                <a href="https://transferbotai.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                    Live Product
+                    <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <div class="portfolio__tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">AI/ML</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
             </div>
         </div>
         </div>
@@ -667,129 +668,130 @@ Passionate about building high-performance, efficient applications that drive re
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             
-        
-        </div>
+         
+         </div>
 
-        </section>
+         </section>
 
-        <!-- CONTACT ME -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Ping me</h2>
-            <span class="section__subtitle">Get in touch</span>
+         <!-- CONTACT ME -->
+         <section class="contact section" id="contact">
+             <h2 class="section__title">Contact Me</h2>
+             <span class="section__subtitle">Get in touch</span>
 
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>
+             <div class="contact__container container grid">
+                 <div>
+                     <div class="contact__information">
+                         <i class="uil uil-phone-alt contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">+1 (601)818-0188</span>
-                        </div>
-                    </div>
+                         <div>
+                             <h3 class="contact__title">Call me</h3>
+                             <span class="contatc__subtitle">+1 (601)818-0188</span>
+                         </div>
+                     </div>
 
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
+                     <div class="contact__information">
+                         <i class="uil uil-envelope contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">lokeshreddydarukumalli@gmail.com</span>
-                        </div>
-                    </div>
+                         <div>
+                             <h3 class="contact__title">E-mail</h3>
+                             <span class="contatc__subtitle">lokeshreddydarukumalli@gmail.com</span>
+                         </div>
+                     </div>
 
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
+                     <div class="contact__information">
+                         <i class="uil uil-map-marker contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Mississippi, USA</span>
-                        </div>
-                    </div>
-                </div>
+                         <div>
+                             <h3 class="contact__title">Location</h3>
+                             <span class="contatc__subtitle">Celina, TX</span>
+                         </div>
+                     </div>
+                 </div>
 
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
+                 <form action="" class="contact__form grid">
+                     <div class="contact__inputs grid">
+                         <div class="contact__content">
+                             <label for="" class="contact__label">Name</label>
+                             <input type="text" class="contact__input">
+                         </div>
 
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
+                         <div class="contact__content">
+                             <label for="" class="contact__label">E-mail</label>
+                             <input type="email" class="contact__input">
+                         </div>
+                     </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
+                     <div class="contact__content">
+                         <label for="" class="contact__label">Subject</label>
+                         <input type="text" class="contact__input">
+                     </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+                     <div class="contact__content">
+                         <label for="" class="contact__label">Description</label>
+                         <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                     </div>
 
-                    <div>
-                        <a href="mailto:lokeshreddydarukumalli@gmail.com"  class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </form>
-            </div>
+                     <div>
+                         <a href="mailto:lokeshreddydarukumalli@gmail.com"  class="button button--flex">
+                             Send message
+                             <i class="uil uil-message button__icon"></i>
+                         </a>
+                     </div>
+                 </form>
+             </div>
 
-        </section>
-    </main>
+         </section>
+     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+     <!-- FOOTER -->
+     <footer class="footer">
 
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title" >Lokesh Reddy Darukumalli</h1>
-                    <span class="footer__subtitle">Full Stack Developer |<br> Frontend Developer | <br> Backend Developer | <br> Software Developer | <br> Software Engineer |</span>
-                </div>
+         <div class="footer__bg">
+             <div class="footer__container container grid">
+                 <div>
+                     <h1 class="footer__title" >Lokesh Reddy Darukumalli</h1>
+                     <span class="footer__subtitle">AI/ML Engineer | Full-Stack Developer | Software Engineer</span>
+                 </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
+                 <ul class="footer__links">
+                     <li>
+                         <a href="#portfolio" class="footer__link">Projects</a>
+                     </li>
+                     <li>
+                         <a href="#experience" class="footer__link">Experience</a>
+                     </li>
+                     <li>
+                         <a href="#contact" class="footer__link">Contact</a>
+                     </li>
+                 </ul>
 
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/lokeshreddy-darukumalli-3a67b5234/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/loki_6_20?igsh=ODI3bXNpbzBmZDUw" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/LOKESH_77" target="_blank" class="footer__social">
-                        <i class="uil uil-brackets-curly"></i> <!-- Curly brackets (code-related) -->
-                        <i class="uil uil-terminal"></i> <!-- Terminal icon -->
-                        <i class="uil uil-code"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="footer__copy">&#169; Lokesh Reddy. All rights reserved.</p>
-        </div>
-    </footer>
+                 <div class="footer__socials">
+                     <a href="https://www.linkedin.com/in/lokeshreddydarukumalli/" target="_blank" class="footer__social">
+                         <i class="uil uil-linkedin"></i>
+                     </a>
+                     <a href="https://github.com/DLOKESHREDDY" target="_blank" class="footer__social">
+                         <i class="uil uil-github-alt"></i>
+                     </a>
+                     <a href="mailto:lokeshreddydarukumalli@gmail.com" class="footer__social">
+                         <i class="uil uil-envelope-alt"></i>
+                     </a>
+                 </div>
+             </div>
+             <p class="footer__copy">&#169; 2025 Lokesh Reddy Darukumalli. All rights reserved.</p>
+         </div>
+     </footer>
 
-    <!-- SCROLL TOP -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-    
+     <!-- SCROLL TOP -->
+     <a href="#" class="scrollup" id="scroll-up">
+         <i class="uil uil-arrow-up scrollup__icon"></i>
+     </a>
+     
 
-    <!-- SWIPER JS -->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
+     <!-- SWIPER JS -->
+     <script src="./packages/js/swiper-bundle.min.js"></script>
 
-    <!-- MAIN JS -->
-    <script src="./packages/js/main.js"></script>
-</body>
+     <!-- MAIN JS -->
+     <script src="./packages/js/main.js"></script>
+ </body>
 
-</html>
+ </html>
