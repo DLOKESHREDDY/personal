@@ -1,0 +1,22 @@
+{
+  "name": "lokesh-portfolio",
+  "version": "1.0.0",
+  "description": "Lokesh Reddy Darukumalli - AI/ML Engineer & Full-Stack Developer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "ml",
+    "full-stack",
+    "developer"
+  ],
+  "author": "Lokesh Reddy Darukumalli",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
