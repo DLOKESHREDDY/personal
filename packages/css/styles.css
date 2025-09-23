@@ -1,971 +1,1101 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-        <!-- UNICONS -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <!-- SWIPER CSS -->
-        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="./packages/css/styles.css">
-        <title>Lokesh's Personal Portfolio</title>
-    </head>
-    
-    <body>
-        <!-- HEADER -->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Lokesh Reddy Darukumalli</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio                                </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact                               </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
 
-        <!-- MAIN -->
-        <main class="main">
-            <!-- HOME -->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/lokeshreddy-darukumalli-3a67b5234/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/loki_6_20?igsh=ODI3bXNpbzBmZDUw" target="_blank" class="home__social-icon">
-                                <i class="uil uil-instagram"></i>
-                            </a>
-                            <a href="https://github.com/DLOKESHREDDY" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 220; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" href=".\packages\images\Profile.jpeg"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Lokesh</h1>
-                            <h3 class="home__subtitle">Full Stack Developer </h3>
-                            <p class="home__description">Acquiring knowledge in design and developing the websites.</p>
-                            <div class="home__buttons">
-                                <a href="#contact" class="button button--flex home__button">
-                                    Contact Me<i class="uil uil-message button__icon"></i>
-                                </a>
-                                <a download="LokeshReddy_Resume.pdf" href=".\packages\Files\LokeshReddy_Resume.pdf" target="_blank" class="button button--flex button--outline home__button">
-                                    Download Resume<i class="uil uil-download-alt button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll Down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section> 
+  /*========== Font and typography ==========*/
+  --body-font: 'Inter', sans-serif;
 
-            <!-- ABOUT -->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 
-                <div class="about__container container grid">
-                    <img src="packages/images/profile1.jpeg" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">
-                            Over 4+ years of experience as a Full Stack Developer, specializing in scalable web applications, 
-microservices, and cloud-based architectures. Proficient in technologies such as React.js, Vue.js, 
-Node.js, and with a strong foundation in data structures, algorithms, and distributed 
-systems. Experienced in database management, cloud computing, and DevOps practices. 
-Passionate about building high-performance, efficient applications that drive real-world impact.
-                        </p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">04+</span>
-                                <span class="about__info-name">Years <br> Experience</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">certifications <br> Completed</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">03+</span>
-                                <span class="about__info-name">companies<br>Worked</span>
-                            </div>
-                        </div>
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
-                        <div class="about__buttons">
-                            <a download="LokeshReddy_Resume.pdf" href=".\packages\Files\LokeshReddy_Resume.pdf" target="_blank" class="button button--flex">
-                                Download Resume<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
-            <!-- SKILLS -->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
 
-                <div class="skills__container container grid">
-                    <div>
-                         <!-- SKILL-1 -->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-analytics skills__icon"></i>
-                               <div>
-                                   <h1 class="skills__title">Programming & AI/ML</h1>
-                                   <!-- <span class="skills__subtitle">More than 2 years</span> -->
-                               </div>
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
 
-                               <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number">95%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">TensorFlow</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__tensorflow"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">OpenCV</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__opencv"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">OpenAI API</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__openai"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">C</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__c"></span>
-                                    </div>
-                                </div>
-                               <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">30%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  /* HSL color mode */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
 
-                    <div>
-                        <!-- SKILLS 2 -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                               <i class="uil uil-brackets-curly skills__icon"></i>
-                               <div>
-                                   <h1 class="skills__title">Frontend Development</h1>
-                                   <!-- <span class="skills__subtitle">More than 3 years</span> -->
-                               </div>
+/*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
 
-                               <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React.js</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__reactjs"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Next.js</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nextjs"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">TypeScript</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__typescript"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Vue.js</h3>
-                                        <span class="skills__number">75%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__vuejs"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-                               <div class="skills__data">
-                                   <div class="skills__titles">
-                                       <h3 class="skills__name">CSS</h3>
-                                       <span class="skills__number">70%</span>
-                                   </div>
-                                   <div class="skills__bar">
-                                       <span class="skills__percentage skills__css"></span>
-                                   </div>
-                               </div>
-                               <div class="skills__data">
-                                   <div class="skills__titles">
-                                       <h3 class="skills__name">JavaScript</h3>
-                                       <span class="skills__number">50%</span>
-                                   </div>
-                                   <div class="skills__bar">
-                                       <span class="skills__percentage skills__js"></span>
-                                   </div>
-                               </div>
-                               <div class="skills__data">
-                                   <div class="skills__titles">
-                                       <h3 class="skills__name">WordPress</h3>
-                                       <span class="skills__number">60%</span>
-                                   </div>
-                                   <div class="skills__bar">
-                                       <span class="skills__percentage skills__wordpress"></span>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                    </div>
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
 
-                    <div>
-                        <!-- SKILLS 3 -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                               <i class="uil uil-server-network skills__icon"></i>
-                               <div>
-                                   <h1 class="skills__title">Backend & DevOps</h1>
-                                   <!-- <span class="skills__subtitle">More than 3 years</span> -->
-                               </div>
+.change-theme:hover {
+  color: var(--first-color);
+}
 
-                               <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Node.js</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nodejs"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">FastAPI</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__fastapi"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">PostgreSQL</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__postgresql"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">AWS</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__aws"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MongoDB</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__mongodb"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">GitHub</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__github"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills__number">75%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__docker"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Redis</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__redis"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__mysql"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Express.js</h3>
-                                        <span class="skills__number">30%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__expressjs"></span>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </section>
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-        <!-- QUALIFICATION -->
-        <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+html {
+  scroll-behavior: smooth;
+}
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
 
-                    <div class="qualification__button button--flex" data-target="#certifications">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Certifications
-                    </div>
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
 
-                    <div class="qualification__button button--flex" data-target="#experience">
-                        <i class="uil uil-briefcase-alt experience__icon"></i>
-                        Experience
-                    </div>
-                </div>
+ul {
+  list-style: none;
+}
 
-            <div class="qualification__sections">
-            <!-- QUALIFICATION CONTENT 1 -->
-            <div class="qualification__content qualification__active" data-content id="education">
-             <!-- QUALIFICATION 1 --> 
-             <div class="qualification__data">
-                 <div>
-                     <h3 class="qualification__title">Secondary School Certificate</h3>
-                     <span class="qualification__subtitle">Sri Vidyniketan High School, Singarayakonda</span>
-                     <div class="qualification__calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2016 - 2017
-                     </div>
-                 </div>
+a {
+  text-decoration: none;
+}
 
-                 <div>
-                     <span class="qualification__rounder"></span>
-                     <span class="qualification__line"></span>
-                 </div>
-             </div>
-             
-             <!-- QUALIFICATION 2 --> 
-             <div class="qualification__data">
-                <div></div>
-                <div>
-                   <span class="qualification__rounder"></span>
-                   <span class="qualification__line"></span>
-                </div>
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-                <div>
-                    <h3 class="qualification__title">Intermediate</h3>
-                    <span class="qualification__subtitle">Sri Chaitanya Junior College, Vijayawada</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       2017 - 2019
-                    </div>
-                </div>
-            </div> 
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
 
-            <!-- QUALIFICATION 3 --> 
-            <div class="qualification__data">
-                <div>
-                    <h3 class="qualification__title">Bachelor of Technology</h3>
-                    <span class="qualification__subtitle">Bapatla Engineering College, Bapatla</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       2019 - 2023
-                    </div>
-                </div>
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
 
-                <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                </div>
-            </div> 
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
 
-            <!-- QUALIFICATION 4 --> 
-            <div class="qualification__data">
-                <div></div>
-                <div>
-                    <span class="qualification__rounder"></span>
-                   <!-- <span class="qualification__line"></span> -->
-                </div>
-                <div>
-                    <h3 class="qualification__title">Masters in Computer Science and Engineering</h3>
-                    <span class="qualification__subtitle">University of Southern Mississippi, Mississippi</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       2024 - 2025
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-            <!-- QUALIFICATION CONTENT 2 -->
-            <div class="qualification__content" data-content id="certifications">
-                <!-- QUALIFICATION 1 --> 
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">C for EveryOne: Programming Fundamentals</h3>
-                        <span class="qualification__subtitle">Coursera</span>
-                        <div class="qualification__calendar">
-                           <i class="uil uil-calendar-alt"></i>
-                           May30, 2021
-                        </div>
-                    </div>
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                </div>
-                
-                <!-- QUALIFICATION 2 --> 
-                <div class="qualification__data">
-                   <div></div>
-                   <div>
-                      <span class="qualification__rounder"></span>
-                      <span class="qualification__line"></span>
-                   </div>
-                   <div>
-                    <h3 class="qualification__title">Python for DataScience</h3>
-                       <span class="qualification__subtitle">NPTEL, Swayam</span>
-                       <div class="qualification__calendar">
-                          <i class="uil uil-calendar-alt"></i>
-                          August, 2021
-                       </div>
-                   </div>
-               </div> 
-   
-               <!-- QUALIFICATION 3 --> 
-               <div class="qualification__data">
-                   <div>
-                    <h3 class="qualification__title">Google Cybersecurity</h3>
-                    <span class="qualification__subtitle">Google, Coursera</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       July8, 2024
-                    </div>
-                   </div>
-                   <div>
-                       <span class="qualification__rounder"></span>
-                       <span class="qualification__line"></span>
-                   </div>
-               </div>
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
 
-               <!-- QUALIFICATION 4 --> 
-               <div class="qualification__data">
-                <div></div>
-                <div>
-                   <span class="qualification__rounder"></span>
-                   <span class="qualification__line"></span>
-                </div>
-                <div>
-                 <h3 class="qualification__title">JavaScript Algorithms and Data Structures (Beta)</h3>
-                    <span class="qualification__subtitle">freeCodeCamp</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                      July 18, 2024
-                    </div>
-                </div>
-            </div>
-            <!-- QUALIFICATION 5 --> 
-            <div class="qualification__data">
-                <div>
-                    <h3 class="qualification__title">Responsive Web Design </h3>
-                    <span class="qualification__subtitle">freeCodeCamp</span>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                        July 17, 2024
-                    </div>
-                </div>
-                <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                </div>
-            </div>
-            
-            <!-- QUALIFICATION 6 --> 
-            <div class="qualification__data">
-               <div></div>
-               <div>
-                  <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
-               </div>
-               <div>
-                <h3 class="qualification__title">Problem Solving(Advanced) Certification</h3>
-                   <span class="qualification__subtitle">HackerRank</span>
-                   <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                     Sep 23, 2023
-                   </div>
-               </div>
-           </div>
-                   
-            </div>
-             
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
 
-            <!-- QUALIFICATION CONTENT 3 -->
-        <div class="qualification__content" data-content id="experience">
-            <!-- QUALIFICATION 1 --> 
-            <div class="qualification__data">
-                <div>
-                    <h3 class="qualification__title">Web Developer</h3>
-                    <span class="qualification__subtitle">Avodha Edutech Pvt Ltd, Hyderabad(Remote)</span>
-                    <ul class="qualification__details">
-                        <li>Developed and maintained responsive web applications using HTML, CSS, JavaScript, and React.js</li>
-                        <li>Collaborated with design teams to implement user-friendly interfaces and improve user experience</li>
-                        <li>Optimized website performance and ensured cross-browser compatibility</li>
-                        <li>Integrated RESTful APIs and managed database operations</li>
-                    </ul>
-                    <div class="qualification__calendar">
-                       <i class="uil uil-calendar-alt"></i>
-                       Aug 2021 - Jul 2022 
-                    </div>
-                </div>
-                <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                </div>
-            </div>
-            
-            <!-- QUALIFICATION 2 --> 
-            <div class="qualification__data">
-               <div></div>
-               <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-               </div>
-               <div>
-                <h3 class="qualification__title">Software Engineer</h3>
-                <span class="qualification__subtitle">Tourslog, USA (Remote)</span>
-                <ul class="qualification__details">
-                    <li>Built scalable full-stack applications using React.js, Node.js, and MongoDB</li>
-                    <li>Implemented microservices architecture and RESTful APIs for travel booking platform</li>
-                    <li>Collaborated with international teams using Agile methodologies</li>
-                    <li>Optimized database queries and improved application performance by 40%</li>
-                </ul>
-                <div class="qualification__calendar">
-                   <i class="uil uil-calendar-alt"></i>
-                   Aug 2022 - Feb 2023
-                </div>
-               </div>
-           </div> 
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
 
-           <!-- QUALIFICATION 3 --> 
-           <div class="qualification__data">
-               <div>
-                   <h3 class="qualification__title">Teaching Assistant</h3>
-                   <span class="qualification__subtitle">University of Southern Mississippi, USA (On-site)</span>
-                   <ul class="qualification__details">
-                       <li>Assisted professors in teaching computer science courses to undergraduate students</li>
-                       <li>Conducted lab sessions and provided technical support for programming assignments</li>
-                       <li>Graded assignments and provided constructive feedback to improve student learning</li>
-                       <li>Mentored students in data structures, algorithms, and software development practices</li>
-                   </ul>
-                   <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                      Aug 2024 - Jan 2025
-                   </div>
-               </div>
-               <div>
-                   <span class="qualification__rounder"></span>
-                   <!-- <span class="qualification__line"></span> -->
-               </div>
-           </div> 
-        </div>
-               </div>
-            </div>
-        </section> 
-      
-        <!-- PORTFOLIO -->
-        <section class="portfolio section" id="portfolio">
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
 
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent works</span>
+/*==================== NAV ====================*/
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-            <div class="portfolio__container container swiper-container">
-        <div class="swiper-wrapper">
-        <!-- PORTFOLIO 1 -->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/landin.png" alt="" class="landin__img">
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">
-                        College Technical Fest Organizer</h3>
-                    <p class="portfolio__description">This web application gives the complete information about the events, sponsors,guests, registration portal for students as participant, volunteer and coordinator. </p>
-                    <div class="portfolio__tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                    <a href="https://github.com/DLOKESHREDDY/BectagonEventSite" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-        
-        <!-- PORTFOLIO 2 -->
-        
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/ML.png" alt="" class="portfolio__img">
+.nav__logo:hover {
+  color: var(--first-color);
+}
 
-            <div class="portfolio_">
-                <h3 class="portfolio__title">
-                    AI-Based Models for Image processing for Agriculture Monitoring</h3>
-                <p class="portfolio__description">A research study has been conducted for the detection of plant diseases based on a dataset containing 2,310 images with the help of machine learning and deep learning algorithms. </p>
-                <div class="portfolio__tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">TensorFlow</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">Scikit-learn</span>
-                    <span class="tech-tag">Jupyter</span>
-                </div>
-                <!-- <a href="https://github.com/DLOKESHREDDY/AI-Based-Models-for-Image-processing-for-Agriculture-Monitoring" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                    <br>
-                    <a download="FinalPaper_AgricultureMonitoring.pdf" href=".\packages\Files\ML_Project.pdf" target="_blank" class="button button--flex button--small portfolio__button>
-                        Download Paper<i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </a> -->
-                <div style="display: flex; gap: 10px;">
-                    <a href="https://github.com/DLOKESHREDDY/AI-Based-Models-for-Image-processing-for-Agriculture-Monitoring" 
-                       class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                
-                    <a download="FinalPaper_AgricultureMonitoring.pdf" 
-                       href="./packages/Files/ML_Project.pdf" 
-                       target="_blank" 
-                       class="button button--flex button--small portfolio__button">
-                        Download Paper
-                        <i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-            
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
 
-        <!-- PORTFOLIO 3 -->
-    
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/FaceRecog.png" alt="" class="portfolio__img">
+.nav__toggle:hover {
+  color: var(--first-color);
+}
 
-            <div class="portfolio_">
-                <h3 class="portfolio__title">
-                    Face Recognition Based Attendance System with UI Interface</h3>
-                <p class="portfolio__description">This system streamlines the attendance management process, improving efficiency and accuracy. In the professor's interface, educators are required to input essential details such as room number, course name, section, and upload a group image of the students.</p>
-                <div class="portfolio__tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">Face Recognition</span>
-                    <span class="tech-tag">Tkinter</span>
-                    <span class="tech-tag">SQLite</span>
-                </div>
-                <a href="" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-            </div>
-        </div>
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+  }
+}
 
-        <!-- PORTFOLIO 4 -->
-<!-- 
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/portfolio3.png" alt="" class="portfolio__img">
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
-            <div class="portfolio_">
-                <h3 class="portfolio__title">Quiz App</h3>
-                <p class="portfolio__description">QuizApp is a simple and interactive web-based quiz application built with HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/Mohanpavankumar/QuizApp/" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-            </div>
-        </div> -->
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
-        <!-- PORTFOLIO 5 -->
+.nav__link:hover {
+  color: var(--first-color);
+}
 
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/quiz_1.png" alt="" class="portfolio__img">
+.nav__icon {
+  font-size: 1.2rem;
+}
 
-            <div class="portfolio_">
-                <h3 class="portfolio__title">BEC Online Quiz Portal</h3>
-                <p class="portfolio__description">BEC Online Quiz Portal is a web-based platform designed to facilitate seamless quiz creation, management, and evaluation for students and faculty at Bapatla Engineering College. It offers an intuitive interface for conducting timed quizzes, automatic grading, and performance tracking.</p>
-                <div class="portfolio__tech">
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Express.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">JWT</span>
-                </div>
-                <a href="https://github.com/DLOKESHREDDY/Studentsportal" target="_blank" class="button button--flex button--small portfolio__button">
-                    Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-            </div>
-        </div>
-        </div>
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
 
-            <!-- add arrows-->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
+.nav__close:hover {
+  color: var(--first-color-alt);
+}
 
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
+/* show menu */
+.show-menu {
+  bottom: 0;
+}
 
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            
-        
-        </div>
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
 
-        </section>
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
 
-        <!-- CONTACT ME -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Ping me</h2>
-            <span class="section__subtitle">Get in touch</span>
+/*==================== HOME ====================*/
+.home__container {
+  gap: 1rem;
+}
 
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>
+.home__content {
+  grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
 
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">+1 (601)818-0188</span>
-                        </div>
-                    </div>
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
 
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
+.home__social-icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
 
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">lokeshreddydarukumalli@gmail.com</span>
-                        </div>
-                    </div>
+.home__social-icon:hover {
+  color: var(--first-color-alt);
+}
 
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
+.home__blob {
+  width: 200px;
+  fill: var(--first-color);
+}
 
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Mississippi, USA</span>
-                        </div>
-                    </div>
-                </div>
+.home__blob-img {
+  width: 170px;
+}
 
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
+.home__data {
+  grid-column: 1/3;
+}
 
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
+.home__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-0-25);
+}
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+.home__description {
+  margin-bottom: var(--mb-2);
+}
 
-                    <div>
-                        <a href="mailto:lokeshreddydarukumalli@gmail.com"  class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </form>
-            </div>
+.home__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
 
-        </section>
-    </main>
+.home__button {
+  margin-bottom: var(--mb-0-5);
+}
 
-    <!-- FOOTER -->
-    <footer class="footer">
+.home__scroll {
+  display: none;
+}
 
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title" >Lokesh Reddy Darukumalli</h1>
-                    <span class="footer__subtitle">Full Stack Developer |<br> Frontend Developer | <br> Backend Developer | <br> Software Developer | <br> Software Engineer |</span>
-                </div>
+.home__scroll-button {
+  color: var(--first-color);
+  transition: .3s;
+}
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
+.home__scroll-button:hover {
+  transform: translateY(.25rem);
+}
 
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/lokeshreddy-darukumalli-3a67b5234/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/loki_6_20?igsh=ODI3bXNpbzBmZDUw" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/LOKESH_77" target="_blank" class="footer__social">
-                        <i class="uil uil-brackets-curly"></i> <!-- Curly brackets (code-related) -->
-                        <i class="uil uil-terminal"></i> <!-- Terminal icon -->
-                        <i class="uil uil-code"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="footer__copy">&#169; Lokesh Reddy. All rights reserved.</p>
-        </div>
-    </footer>
+.home__scroll-mouse {
+  font-size: 2rem;
+}
 
-    <!-- SCROLL TOP -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-    
+.home__scroll-name {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+}
 
-    <!-- SWIPER JS -->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
+.home__scroll-arrow {
+  font-size: 1.25rem;
+}
 
-    <!-- MAIN JS -->
-    <script src="./packages/js/main.js"></script>
-</body>
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
 
-</html>
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: .75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
+.button--white {
+  background-color: #FFF;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #FFF;
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
+}
+
+.button--outline:hover {
+  background-color: var(--first-color);
+  color: #FFF;
+}
+
+/*==================== ABOUT ====================*/
+.about__img {
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+/* Skill percentages */
+.skills__tensorflow { width: 90%; }
+.skills__python { width: 95%; }
+.skills__opencv { width: 85%; }
+.skills__openai { width: 80%; }
+.skills__reactjs { width: 90%; }
+.skills__nextjs { width: 85%; }
+.skills__typescript { width: 85%; }
+.skills__vuejs { width: 75%; }
+.skills__nodejs { width: 90%; }
+.skills__fastapi { width: 85%; }
+.skills__aws { width: 80%; }
+.skills__docker { width: 75%; }
+.skills__postgresql { width: 85%; }
+.skills__mongodb { width: 80%; }
+.skills__github { width: 80%; }
+.skills__redis { width: 70%; }
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover {
+  color: var(--first-color);
+}
+
+.qualification__icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__details {
+  margin-top: var(--mb-0-5);
+  padding-left: var(--mb-1);
+}
+
+.qualification__details li {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-25);
+  color: var(--text-color);
+}
+
+.qualification__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
+.qualification__content {
+  display: none;
+}
+
+.qualification__active {
+  display: block;
+}
+
+.qualification__button.qualification__active {
+  color: var(--first-color);
+}
+
+/*==================== PORTFOLIO ====================*/
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio__img {
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+
+.portfolio__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+}
+
+.swiper-container .swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -.5rem;
+}
+
+.swiper-button-next {
+  right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+/*==================== CONTACT ====================*/
+.contact__container {
+  row-gap: 3rem;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+/*==================== FOOTER ====================*/
+.footer {
+  padding-top: 2rem;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__bg {
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #FFF;
+}
+
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: .8;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav__menu {
+    padding: 2rem .25rem 4rem;
+  }
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .home__content {
+    grid-template-columns: .25fr 3fr;
+  }
+  .home__blob {
+    width: 180px;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification__data {
+    gap: .5rem;
+  }
+
+  .portfolio__img {
+    width: 200px;
+  }
+
+  .home__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data {
+    grid-column: initial;
+  }
+  .home__img {
+    order: 1;
+    justify-self: center;
+  }
+
+  .about__container,
+  .skills__container,
+  .portfolio__content,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  }
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .nav__menu {
+    margin-left: auto;
+  }
+  .change-theme {
+    margin: 0;
+  }
+
+  .home__container {
+    row-gap: 5rem;
+  }
+  .home__content {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+  .home__blob {
+    width: 270px;
+  }
+  .home__scroll {
+    display: block;
+  }
+  .home__scroll-button {
+    margin-left: 3rem;
+  }
+
+  .about__container {
+    column-gap: 5rem;
+  }
+  .about__img {
+    width: 350px;
+  }
+  .about__description {
+    text-align: initial;
+  }
+  .about__info {
+    justify-content: space-between;
+  }
+  .about__buttons {
+    justify-content: initial;
+  }
+
+  .qualification__tabs {
+    justify-content: center;
+  }
+  .qualification__button {
+    margin: 0 var(--mb-1);
+  }
+  .qualification__sections {
+    grid-template-columns: .5fr;
+  }
+
+  .portfolio__img {
+    width: 320px;
+  }
+  .portfolio__content {
+    align-items: center;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__bg {
+    padding: 3rem 0 3.5rem;
+  }
+  .footer__links {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .footer__socials {
+    justify-self: flex-end;
+  }
+  .footer__copy {
+    margin-top: 4.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer__container {
+    padding: 0;
+  }
+
+  .home__blob {
+    width: 320px;
+  }
+  .home__social {
+    transform: translateX(-6rem);
+  }
+
+  .portfolio__content {
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev {
+    left: -3.5rem;
+  }
+  .swiper-button-next {
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+
+  .contact__form {
+    width: 460px;
+  }
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
